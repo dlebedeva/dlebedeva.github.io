@@ -5,13 +5,34 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Montserrat:300" rel="stylesheet">
     <style type="text/css">
         body {
-            background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+            background-image: linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
             box-shadow: inset 0 0 0 1.5em rgba(255, 255, 255, 0.85);
             font-family: 'Crimson Text', serif;
             padding: 3em;
             margin: 0;
             min-height: calc(100vh - 6em);
             color: #fff;
+        }
+        h1 { font-weight: 600; }
+        h2 {
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 11pt;
+            letter-spacing: 3pt;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50pt;
+            padding: 0.2em 0.7em;
+            line-height: 2.4em;
+            transition: all 0.33s;
+        }
+        a:hover {
+            background: #fff;
+            color: #f78ca0;
+            mix-blend-mode: multiply;
         }
         .avatar {
             border-radius: 50%;
@@ -20,14 +41,14 @@
             height: 100pt;
             display: block;
             box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.15);
-            font-family: 'Montserrat', sans-serif;
+
         }
-        h1 { font-weight: 600; }
-        h2 {
-            font-weight: 400;
-            text-transform: uppercase;
-            font-size: 11pt;
-            letter-spacing: 3pt;
+        .contact-links {
+            font-family: 'Montserrat', sans-serif;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #fff;
         }
     </style>
 </head>
@@ -39,7 +60,8 @@
             <h2>Global Trade Advisory Manager</h2>
         </div>
         <div>
-            <ul>
+            <h2>Connect</h2>
+            <ul class="contact-links">
                 <li><a href="https://www.linkedin.com/in/dlebedeva">LinkedIn</a></li>
                 <li><a href="https://www.facebook.com/lebedeva">Facebook</a></li>
                 <li><a href="mailto:darialebedeva@gmail.com">Email</a></li>
